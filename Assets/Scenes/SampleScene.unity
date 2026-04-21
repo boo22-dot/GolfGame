@@ -352,6 +352,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3630461576678249991, guid: de5541a6f611e194dad2bc6ba668ed75, type: 3}
   m_PrefabInstance: {fileID: 97863088}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &109420025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109420026}
+  m_Layer: 6
+  m_Name: attach point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109420026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109420025}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.43764156, y: -0.55540055, z: -0.43764168, w: 0.5554006}
+  m_LocalPosition: {x: 0, y: -1.29, z: 0.00000043477007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2134504845}
+  m_LocalEulerAnglesHint: {x: -76.474, y: -90, z: 0}
 --- !u!1 &122790986
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,7 +1232,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -1323,7 +1354,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 333966123}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1628,7 +1659,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 414283507}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -1775,6 +1806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UpHill
       objectReference: {fileID: 0}
+    - target: {fileID: 942272673183471942, guid: e8999d269ed7b3e47b048c17f4115ea5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1896,6 +1931,10 @@ PrefabInstance:
     - target: {fileID: 8576073539098388507, guid: ad6c6fd7e14427047823a5d2f14b53c6, type: 3}
       propertyPath: m_Name
       value: Endhole
+      objectReference: {fileID: 0}
+    - target: {fileID: 8576073539098388507, guid: ad6c6fd7e14427047823a5d2f14b53c6, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8957525375532298913, guid: ad6c6fd7e14427047823a5d2f14b53c6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2446,6 +2485,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turn
       objectReference: {fileID: 0}
+    - target: {fileID: 1504790082947926321, guid: 1998c21e38ccd7c469ef87eb37027db7, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2281572625917678475, guid: 1998c21e38ccd7c469ef87eb37027db7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.7462701
@@ -2507,6 +2550,10 @@ PrefabInstance:
     - target: {fileID: 1610091851008375707, guid: a9b0b7ce886a3094fb0fcc006f625e2e, type: 3}
       propertyPath: m_Name
       value: 90Curved
+      objectReference: {fileID: 0}
+    - target: {fileID: 1610091851008375707, guid: a9b0b7ce886a3094fb0fcc006f625e2e, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2095267491187695905, guid: a9b0b7ce886a3094fb0fcc006f625e2e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2610,7 +2657,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &746988638
 MonoBehaviour:
@@ -2968,6 +3015,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 4102903415064179830, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051548049563808381, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -3020,9 +3075,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269091841289193149, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546319308101016110, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleGreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044630533067829901, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401908750773710254, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219657690361434345, guid: d86f766457c8b0c46850151121c6c63f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3046,6 +3125,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 4102903415064179830, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051548049563808381, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -3098,9 +3185,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269091841289193149, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546319308101016110, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleYellow
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044630533067829901, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401908750773710254, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219657690361434345, guid: 8d1a2b630357f3f4bbf02544d08ba7de, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3124,6 +3231,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 4102903415064179830, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051548049563808381, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -3176,14 +3291,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269091841289193149, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546319308101016110, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleOrange
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044630533067829901, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401908750773710254, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8670239147784699284, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b69db8e2e4e74f74faa4b9c3c5d747a5, type: 2}
+    - target: {fileID: 9219657690361434345, guid: a2c8d0ed46e173d4597a4cf6558da6fe, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3345,7 +3480,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978116337}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3567,7 +3702,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007517054}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3659,7 +3794,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1011114929
 MonoBehaviour:
@@ -3901,7 +4036,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044296718}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4279,13 +4414,13 @@ Transform:
   - {fileID: 1158578397}
   - {fileID: 1269256327}
   - {fileID: 1954321833}
+  - {fileID: 2134504845}
   - {fileID: 1774571576}
   - {fileID: 1011114927}
   - {fileID: 1716783995}
   - {fileID: 746988636}
   - {fileID: 1479717790}
   - {fileID: 1996131450}
-  - {fileID: 2134504845}
   - {fileID: 1724708708}
   - {fileID: 1829664679}
   - {fileID: 1504619429}
@@ -4519,7 +4654,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1154914370}
   serializedVersion: 5
-  m_Mass: 0.05
+  m_Mass: 0.5
   m_LinearDamping: 0
   m_AngularDamping: 1.5
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -4877,6 +5012,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Golf (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73e7feea75218f842975c1e4a7b81bb6, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4943,7 +5082,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1269256329
 MonoBehaviour:
@@ -5090,6 +5229,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3796692410269933979, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_PhysicsLayerMask.m_Bits
+      value: 193
+      objectReference: {fileID: 0}
     - target: {fileID: 4750419573833148750, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -5201,6 +5344,10 @@ PrefabInstance:
     - target: {fileID: 4750419575962273167, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5137354377943704513, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483873
       objectReference: {fileID: 0}
     - target: {fileID: 8806329115733545877, guid: 77e7c27b2c5525e4aa8cc9f99d654486, type: 3}
       propertyPath: m_Name
@@ -5323,6 +5470,10 @@ PrefabInstance:
     - target: {fileID: 115192462205673242, guid: 1e34f523c11fe4a4dbff9e801a5fecf3, type: 3}
       propertyPath: m_Name
       value: DownHill
+      objectReference: {fileID: 0}
+    - target: {fileID: 115192462205673242, guid: 1e34f523c11fe4a4dbff9e801a5fecf3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 779947659235558816, guid: 1e34f523c11fe4a4dbff9e801a5fecf3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5582,6 +5733,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 73e7feea75218f842975c1e4a7b81bb6, type: 3}
       propertyPath: m_Name
       value: Golf
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 73e7feea75218f842975c1e4a7b81bb6, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6290,6 +6445,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 4102903415064179830, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051548049563808381, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -6342,9 +6505,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269091841289193149, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546319308101016110, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleWhite
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044630533067829901, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401908750773710254, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219657690361434345, guid: 234c9d04d3f7e3b4f9692c050e28b99b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6368,6 +6551,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 1276873375406475956, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2427737838315157597, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -6420,9 +6607,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2783849051660959348, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3097031919003296487, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleBlack
+      objectReference: {fileID: 0}
+    - target: {fileID: 3097031919003296487, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3307739626918136388, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3952651998614541671, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4445609876445833248, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841489213189229759, guid: 94fd951022c39fa4b9da2f245aecfa09, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6525,7 +6736,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1716783997
 MonoBehaviour:
@@ -6927,7 +7138,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1774571578
 MonoBehaviour:
@@ -7649,6 +7860,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1144538336}
     m_Modifications:
+    - target: {fileID: 4102903415064179830, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6051548049563808381, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1389556
@@ -7671,7 +7890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.018745
+      value: 0.018744946
       objectReference: {fileID: 0}
     - target: {fileID: 7201882255809577108, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7701,13 +7920,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7269091841289193149, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7546319308101016110, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
       propertyPath: m_Name
       value: GolfBatHandleBlue
       objectReference: {fileID: 0}
+    - target: {fileID: 7546319308101016110, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8044630533067829901, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8401908750773710254, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9219657690361434345, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7201882255809577108, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 109420026}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7546319308101016110, guid: 2375fe09d296a4740b158ace9721edaa, type: 3}
       insertIndex: -1
@@ -7834,7 +8076,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.05
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1954321835
 MonoBehaviour:
@@ -8610,7 +8852,7 @@ MonoBehaviour:
   m_StartingInteractionStrengthFilters: []
   m_AutoFindParentInteractableInHierarchy: 0
   m_ParentInteractableObject: {fileID: 0}
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 109420026}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -8625,7 +8867,7 @@ MonoBehaviour:
   m_AngularVelocityDamping: 1
   m_AngularVelocityScale: 1
   m_TrackPosition: 1
-  m_SmoothPosition: 0
+  m_SmoothPosition: 1
   m_SmoothPositionAmount: 8
   m_TightenPosition: 0.1
   m_TrackRotation: 1
@@ -8660,7 +8902,7 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
-  m_FarAttachMode: 0
+  m_FarAttachMode: 1
   m_LimitLinearVelocity: 0
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
